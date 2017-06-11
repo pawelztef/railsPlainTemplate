@@ -22,5 +22,10 @@ module Foodtrack
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #to skip assets, scaffolds.css, test framework, helpers, view
+    config.generators do |g|
+      g.test_framework  nil #to skip test framework
+    end
   end
 end
