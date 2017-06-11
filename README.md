@@ -1,9 +1,4 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
 
 * Ruby version
     ruby 2.3.1p112
@@ -14,7 +9,7 @@ Things you may want to cover:
 
 * Development Configuration
 
-  # extra gems and their configs
+  extra gems
     
   gem 'letter opener'
     in config/environments/development.rb
@@ -33,7 +28,7 @@ Things you may want to cover:
   gem 'simple_form'
     rails g simple_form:install --bootstrap
 
-  # turning off a tests generation
+  tests off
   config.generators do |g|
     g.test_framework  nil #to skip test framework
   end
